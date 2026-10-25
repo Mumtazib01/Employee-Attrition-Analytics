@@ -16,7 +16,50 @@ The associations observed in the analysis should not be interpreted as evidence 
 
 ## Dataset Content
 
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's 100GB limit.
+This project used **IBM HR Analytics Employee Attrition & Performance** dataset, which is publicly available on [Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset).
+
+The dataset encompasses **1,470 employee records across 35 original columns**, detailing employee demographics, job specifications, workplace environments and employee attrition.
+
+The dataset is entirely synthetic, which means that it consists of simulated employee data rather than genuine employee records. This ensures that HR analytics data can be demonstrated safely without exposing real workers' personal information.
+
+### Dataset Structure
+
+Each row corresponds to one employee, and the `Attrition` column indicates whether that employee has left the organisation (`Yes`) or stayed (`No`).
+
+The primary variables investigated in this analysis are as followed:
+
+| Variable | Description |
+|---|---|
+| `Attrition` | Whether an employee left the organisation |
+| `Department` | Department in which the employee works |
+| `JobRole` | The specific job title of the employee |
+| `OverTime` | Whether the employee engages in overtime work |
+| `JobSatisfaction` | Job satisfaction rating from 1 (Low) to 4 (Very High) |
+| `YearsAtCompany` | Number of years the worker has been at the company |
+| `Age` | Employee's age in years |
+
+### Data Preparation
+
+The intial data cleaning and preprocessing of the original dataset was coducted using Python and Pandas in the `01_Data_Preparation_ETL.ipynb` notebook.
+
+To support the analysis, additional variables were introduced:
+
+- `Attrition_Flag`: Converts attrition into a numerical value, where 1 represents an employee who left and 0 denotes an employee who remained.
+- `Age_Group`: Groups employees into various age brackets.
+- `Tenure_Group`: Puts employees in groups according to their length of service.
+
+The finalised and cleaned dataset was saved and exported as a CSV file and stored within a version-controlled folder to guarantee reproducibility and further investigation.
+
+### Dataset Limitations
+
+While this dataset provides useful insights into workforce patterns, it is not free of limitations:
+
+- The records are synthetic and lack real-world employee records.
+- It is resctricted to a single dataset rather than multiple organisations.
+- It does not establish the reasons for employee departures.
+- The dataset lacks sufficient time-based information needed to compute a precise annual employee attrition rate.
+
+These constraints are actively factored when it comes to the interpretation of the findings and the formulation of strategic HR recommendations.
 
 ## Business Requirements
 
