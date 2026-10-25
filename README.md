@@ -802,9 +802,48 @@ Potential future improvements include:
 
 SQL and machine learning are future development goals and were not implemented in this project.
 
-## Deployment (optional)
+## Deployment
 
-* If this is a Unit 3 Streamlit, Power BI or Tableau Public project, then you can include a link here and explain how you hosted the dashboard.
+The Employee Attrition Analytics project was developed using Python and Jupyter Notebook for data preparation and analysis, while Tableau Desktop was used to create the interactive dashboards.
+
+The completed dashboards were published to **Tableau Public**, allowing users to explore the findings online.
+
+The project files, including the notebooks, processed datasets and Tableau workbook, are available in the GitHub repository.
+
+### Accessing the Dashboards
+
+**Tableau Public:** [View Employee Attrition Analytics Dashboard]
+(https://public.tableau.com/app/profile/mumtaz.ibrahim7759/viz/Employee_Attrition_Dashboard_17928843071440/Dashboard1-WorkforceOverview?publish=yes)
+
+The published workbook contains two interactive dashboards:
+
+1. **Workforce Overview:** Displays total employees, employees who left, overall attrition rate, and comparisons by department and job role.
+2. **Attrition Drivers:** Presents attrition patterns by overtime status, job satisfaction and employee tenure.
+
+Users can navigate between the dashboards using the **"View Attrition Drivers →"** and **"← Workforce Overview"** buttons.
+
+### Running the Project Locally
+
+To explore the project locally:
+
+1. Clone or download the GitHub repository.
+2. Open the project using VS Code or Jupyter Notebook.
+3. Install the required Python libraries, including pandas and SciPy.
+4. Open `jupyter_notebooks/01_Data_Preparation_ETL.ipynb` to review the data preparation process.
+5. Open `jupyter_notebooks/02_Exploratory_Data_Analysis.ipynb` to examine the analysis and statistical hypothesis testing.
+6. Open `tableau/Employee_Attrition_Dashboard_Final.twbx` using a compatible version of Tableau to explore the dashboards.
+
+The cleaned dataset is stored in `data/cleaned/v1/`, with a processed copy available in `data/processed/v1/`.
+
+The Tableau dashboards can be viewed online without installing Python or running the notebooks.
+
+## Main Data Analysis Libraries
+
+The project used the following libraries and tools:
+
+- **pandas:** Used to load, inspect, clean and transform employee data, create additional variables, group records and calculate attrition rates.
+- **SciPy:** Used to conduct Chi-square tests of independence to examine associations between employee attrition, overtime status and job satisfaction.
+- **Jupyter Notebook:** Used to develop
 
 ### Heroku (optional)
 
