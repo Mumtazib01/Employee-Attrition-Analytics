@@ -756,8 +756,51 @@ These are limitations of the project's scope rather than unresolved software bug
 
 ## Development Roadmap
 
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+### Challenges and Solutions
+
+Throughout the project, several challenges provided opportunities to develop technical and problem-solving skills.
+
+**1. Data Preparation**
+
+Preparing the dataset required understanding its structure, selecting relevant variables and creating new columns for analysis.
+
+This was addressed using Python and pandas to inspect, transform and organise the data into a cleaned, versioned dataset.
+
+**2. Statistical Analysis**
+
+Interpreting the Chi-square tests required understanding statistical significance and the difference between association and causation.
+
+This was addressed by comparing p-values against a significance level of 0.05 and carefully explaining the limitations of the findings.
+
+**3. Dashboard Development**
+
+Designing dashboards required balancing detailed analysis with clear communication for non-technical stakeholders.
+
+This was addressed by separating the findings into two dashboards, using descriptive charts and KPIs, and adding navigation buttons to improve usability.
+
+**4. Project Organisation**
+
+Managing notebooks, datasets, Tableau files and documentation required a consistent development workflow.
+
+GitHub Projects was used to organise tasks, while Git commits and versioned data folders supported progress tracking and reproducibility.
+
+### Skills Developed
+
+The project strengthened practical skills in Python, pandas, exploratory data analysis, statistical hypothesis testing, Tableau, GitHub and technical documentation.
+
+It also improved the ability to translate business requirements into analytical questions and communicate findings to different audiences.
+
+### Future Development
+
+Potential future improvements include:
+
+- Learning and applying SQL to query workforce data.
+- Exploring machine learning models to predict employee attrition.
+- Investigating additional variables and statistical methods.
+- Enhancing Tableau interactivity and dashboard accessibility.
+- Applying the analytical workflow to more realistic or updated datasets.
+
+SQL and machine learning are future development goals and were not implemented in this project.
 
 ## Deployment (optional)
 
