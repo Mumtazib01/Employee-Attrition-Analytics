@@ -420,11 +420,76 @@ ChatGPT was utilised as a trusty coding and learning assistant, while gemini was
 
 All AI-generated suggestions were rigorously reviewed and tailored to meet the project's precise requirements. AI ws merely used as support for this project ans the project is my one work.
 
-## Ethical considerations (optional)
+## Ethical considerations
 
-* Feel free to delete this section if this is a data visualisation only (unit 1 or 2) project submission.
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+Ethical considerations are important in HR analytics because employee-related information can be sensitive, and analytical findings may influence decisions affecting people.
+
+Although this project uses a synthetic dataset, it is still important to handle and interpret the data responsibly
+
+### Data Privacy and Protection
+
+The IBM HR Analytics Employee Attrition & Performance dataset contains simulated employee records and than personal information collected from real workers.
+
+As stated this project did not collect real employee records or access confidential HR systems.
+
+If this analysis were used in a real organisation, personal data would need to be handled in line with relevant data protection laes, including the UK General Data Protection Regulation (UK GDPR) as well as the Data Protection Act 2018.
+
+Key principles include:
+
+- **Lawfulness, fairness and transparency:** Personal data should be processed for a lawful purpose, and employees should be clearly informed about how their data is used. 
+- **Purpose limitation:** Employee information should only be used for specified and legitimate purposes.
+- **Data minimisation:** Only the information needed for the analysis should be collected and processed.
+- **Accuracy:** Employee records and analytical outputs should be checked for errors.
+- **Storage limitation:** Personal data should only be kept for as long as recessary then deleted.
+- **Integrity and confidentiality:** Suitable security measures should protect employee information against unauthorised access or loss.
+
+These principles are described in guidance from the Information Commissioner's Office (ICO, n.d.).
+
+### Data Governance
+
+The project follows a structured data management approach by separating the raw data from the cleaned data which is kept in a versioned folder. 
+
+Jupyter notebooks document the data preparation and analysis, while Git and GitHub record the changes.
+
+For a real HR dataset, more governance measures would be needed such as, access controls, secure storage, defined retention periods and appropriate procedures for checking data quality.
+
+Publishing individual-level employee data in a public repository would require careful assessment and publishing data that identifies individuals or contains confidential information would generally be deemed inappropriate.
+
+### Bias and Fairness
+
+HR analytics can lead to misleading conclusions if differences between employee groups are viewed without considering their wider context.
+
+For example, a higher attrition rate in a department or job role does not necessarily mean that management practices caused employees to leave.
+
+Other factors such as workforce composition, job responsibilities or working conditions could influence as well
+
+To reduce the risk of misleading interpretation, this project:
+
+- Compares attrition rates rather than relying only on departure counts.
+- Clearly states the dataset as synthetic.
+- Distinguishes statistical associations from causal relationships.
+- Avoids making judgements about individual workers.
+- Presents findings as topic for further investigation not as definitive explanations.
+
+### Legal and Social Implications
+
+In a real organisation, workforce analytics could influence recruitment, retention strategies, performance management and oppurtunities at work.
+
+Using incomplete or biased information could lead to unfair treatment or discrimination.
+
+Organisations should therefore consider relevant employment and equality legislation, including the Equality Act 2010, when using workforce data to inform decisions.
+
+Statistical findings should not be used as the sole basis for decisions about individual employees. Human oversight, appropriate consultation and further investigation would also be needed.
+
+### Responsible Communication of Results
+
+The Tableau dashboards show group-level findings rather than profiles of individual employees.
+
+The project explains the limitations of the dataset and avoids claiming that overtime, job satisfaction or tenure directly causes employee to leave.
+
+These steps help stakeholders interpret the findings carefully and avoid placing too much confidence in the results. 
+
+Overall, the project demonstrates how HR analytics can support evidence-informed discussions while recognising the importance of privacy, fairness, transparency and responsible decision-making.
 
 ## Dashboard Design (optional)
 
