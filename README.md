@@ -559,6 +559,91 @@ Although the visualisations highlight differences between employee groups, they 
 
 The findings are based on synthetic data and should not be interpreted as evidence about an actual organisation.
 
+## Testing and Validation
+
+Testing and validation are important to ensure that the analysis is accurate, the findings are consistent and the dashboards meet the project's business requirements.
+
+The project uses data quality checks, statistical validation and dashboard review to assess the reliability of its outputs.
+
+### 1. Data Quality and Preparation
+
+The data preparation process was documented in `01_Data_Preparation_ETL.ipynb`.
+
+The following areas were considered during data preparation:
+
+- Dataset structure, column names and data types.
+- Missing values and duplicate records.
+- Consistency of categorical variables.
+- Creation of `Attrition_Flag`, `Age_Group` and `Tenure_Group`.
+- Exporting the cleaned dataset to a versioned CSV file.
+
+The cleaned dataset contains the information required for the subsequent analysis and dashboard development.
+
+### 2. Validation of Attrition Calculations
+
+Attrition rates were calculated using the number of employees who left divided by the total number of employees in each group.
+
+The overall dataset contains:
+
+- Total employees: **1,470**
+- Employees who left: **237**
+- Employees who stayed: **1,233**
+- Overall attrition rate: **16.12%**
+
+The overall attrition rate can be verified using:
+
+**(237 / 1,470) × 100 = 16.12%**
+
+Group-level attrition rates were used to compare departments, job roles, overtime status, job satisfaction and tenure.
+
+### 3. Statistical Validation
+
+Two Chi-square tests of independence were conducted in `02_Exploratory_Data_Analysis.ipynb`.
+
+| Hypothesis | Chi-square Statistic | p-value | Result |
+|---|---:|---:|---|
+| Overtime and attrition | 87.5643 | < 0.000001 | Statistically significant association |
+| Job satisfaction and attrition | 17.5051 | 0.000556 | Statistically significant association |
+
+Both p-values were below the significance level of 0.05, providing evidence to reject the respective null hypotheses.
+
+These results demonstrate statistical associations, not causal relationships.
+
+### 4. Dashboard Testing
+
+The Tableau dashboards were reviewed against the intended business requirements.
+
+The review focused on:
+
+- Whether the **Workforce Overview** dashboard presents the correct workforce KPIs.
+- Whether the department and job role charts communicate attrition rates.
+- Whether the **Attrition Drivers** dashboard presents overtime, job satisfaction and tenure comparisons.
+- Whether chart titles, labels and percentages are understandable.
+- Whether navigation buttons allow users to move between the two dashboards.
+- Whether the synthetic nature of the dataset is communicated clearly.
+
+The dashboards were designed to support both high-level business review and more detailed analysis.
+
+### 5. Business Requirements Validation
+
+| Business Requirement | Evidence |
+|---|---|
+| BR1 — Department Attrition | Department attrition analysis and Workforce Overview dashboard |
+| BR2 — Job Role Attrition | Job role attrition analysis and Workforce Overview dashboard |
+| BR3 — Overtime and Attrition | Overtime comparison, Chi-square test and Attrition Drivers dashboard |
+| BR4 — Job Satisfaction and Attrition | Satisfaction comparison, Chi-square test and Attrition Drivers dashboard |
+| BR5 — Employee Tenure and Attrition | Tenure group comparison and Attrition Drivers dashboard |
+
+All five business requirements are addressed by the completed analysis and dashboard content.
+
+### 6. Limitations of Validation
+
+The dataset is synthetic, so the results cannot be independently verified against real organisational records.
+
+Statistical significance does not establish causation, and the analysis does not account for every possible factor influencing employee departures.
+
+The project therefore demonstrates a reproducible analytical approach rather than providing validated predictions or conclusions about a real workforce.
+
 ## Unfixed Bugs
 
 * Please list any unfixed bugs and explain why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
