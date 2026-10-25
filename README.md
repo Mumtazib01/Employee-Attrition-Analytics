@@ -16,7 +16,7 @@ The associations observed in the analysis should not be interpreted as evidence 
 
 ## Dataset Content
 
-This project uses the **IBM HR Analytics Employee Attrition & Performance** dataset, which is publicly available on [Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset).
+This project uses the **IBM HR Analytics Employee Attrition & Performance** dataset, which is publicly available on [Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset).(Subhash, n.d.)
 
 The dataset contains **1,470 employee records across 35 original columns**, covering employee demographics, job details, workplace environments, and attrition.
 
@@ -160,7 +160,7 @@ Staff engaged overtime work exhibited rate of company departure within this data
 **Validation Method:**
 
 - Compute turnover rates across the four levels of job satisfaction.
-- Create a contingency table maping job satisfaction against attrition.
+- Create a contingency table mapping job satisfaction against attrition.
 - Conduct the Chi-square test of independence.
 - Assess the resulting p-value against the significance level of 0.05.
 
@@ -212,11 +212,11 @@ User stories were established to structure the requirements into manageable task
 
 The IBM HR Analytics Employee Attrition & Performance dataset was downloaded from Kaggle.
 
-The dataset was evaluated beforehand to understand its underlying structure, active variables and inherent.
+The dataset was evaluated beforehand to understand its underlying structure, active variables and inherent limitations.
 
 **3. Data Preparation and Processing**
 
-Leveraging Python and Pandas in Jupyter Notebook, the dataset was inspected, cleaned and preparef for analysis. 
+Leveraging Python and Pandas in Jupyter Notebook, the dataset was inspected, cleaned and prepared for analysis. 
 
 New variables, such as `Attrition_Flag`, `Age_Group` and `Tenure_Group`, were created to assist with the analysis. 
 
@@ -247,7 +247,7 @@ The finished Tableau workbook was stored inside the project repository and deplo
 
 **7. Testing and Evaluation**
 
-The project was evaluated against the initial business requirements. Including a review of the data preparation process, the varification of calculations and statistical outputs, as well as ensuring that the dashboards convey insights effectively. 
+The project was evaluated against the initial business requirements. Including a review of the data preparation process, the verification of calculations and statistical outputs, as well as ensuring that the dashboards convey insights effectively. 
 
 Dashboard navigation, chart titles and the presentation of key insights were also factored in.
 
@@ -261,7 +261,7 @@ Meaningful commits were used to perserve a transparent, auditable history of pro
 
 ### Data Management
 
-The project utilised separate folders for raw data, prcessed data, Jupyter notebooks and Tableau exports.
+The project utilised separate folders for raw data, processed data, Jupyter notebooks and Tableau exports.
 
 The cleaned dataset resides in a versioned folder, allowing for a consistent dataset while preserving original information. 
 
@@ -273,7 +273,7 @@ For future enhancements, though the current project is based on a fixed syntheti
 
 Future upkeep would entail validating the data structure, rerunning of data prep and analysis notebooks, verifying numerical results, refreshing the Tableau visualisations and refreshing the project documentation.
 
-Potential future expansions may include Machine Learning and SQL anlyses. 
+Potential future expansions may include Machine Learning and SQL analyses. 
 
 ### Methodology Rationale
 
@@ -296,12 +296,12 @@ Two distinct dashboards were created to differentiate between an overall workfor
 | BR1 — Department Attrition | Department attrition rate bar chart | Workforce Overview | Allows users to compare attrition percentages across departments and identify those with higher rates. |
 | BR2 — Job Role Attrition | Job role attrition rate bar chart | Workforce Overview | Highlights differences between job roles and makes it easier to identify roles with relatively high attrition. |
 | BR3 — Overtime and Attrition | Overtime attrition rate bar chart | Attrition Drivers | Compares employees who work overtime with those who do not, making the difference in attrition rates easy to understand. |
-| BR4 — Job Satisfaction and Attrition | Job satisfaction attrition rate bar chart | Attrition Drivers | Shows how attrition rates vary across the four satisfaction levels. |
+| BR4 — Job Satisfaction and Attrition | Job satisfaction attrition rate line chart | Attrition Drivers | Shows how attrition rates vary across the four satisfaction levels. |
 | BR5 — Employee Tenure and Attrition | Tenure group attrition rate bar chart | Attrition Drivers | Compares attrition rates across length-of-service groups to identify differences between newer and longer-serving employees. |
 
 ### Visualisation Design Decisions
 
-**Bar charts** were chosen due to them allowing users to compare turnover rates across categories without needing specialised statistical knowledge.
+**Bar charts were used to compare attrition rates across departments, job roles, overtime categories and tenure groups. A line chart was used to show how attrition rates varied across the four job satisfaction levels.
 
 The **Workforce Overview** dashboard incorporates three key performance indicators (KPIs):
 
@@ -327,7 +327,7 @@ The dashboards differentiate observed patterns from established causes.
 
 For example, while a higher attrition rate among employees working overtime indicates an association in this dataset it does not imply that overtime causes employees to depart.
 
-Turthermore, the dashboards clearly states that the records are syntethic to prevent users from believing that the findings come from real-world organisation.
+Turthermore, the dashboards clearly states that the records are synthetic to prevent users from believing that the findings come from real-world organisation.
 
 ## Analysis techniques used
 
@@ -395,7 +395,7 @@ The **Workforce Overview** dashboard highlights key workforce indicators and com
 
 The **Attrition Drivers** dashboard focuses on attrition patterns by overtime status, job satisfaction and employee tenure.
 
-Bar charts simplified the comparisons of the various categories and KPI indicators provided an instant snapshot of the workforce.
+Bar charts were used to compare attrition rates across categories, while a line chart showed how attrition rates varied across job satisfaction levels. KPI indicators provided an instant snapshot of the workforce.
 
 Navigation buttons were built in so users can go easily go from one dashboard to the other.
 
@@ -414,9 +414,9 @@ Ultimately, The chosen techniques hit the sweet spot for uncovering initial turn
 
 ### 6. Use of Generative AI
 
-Generative AI tools played a supportive role throughout the development of this project. This includes brainstorming, giving explanations of of analytical concepts, assissting with code creation as well as improving documentation. 
+Generative AI tools played a supportive role throughout the development of this project. This includes brainstorming, giving explanations of of analytical concepts, assisting with code creation as well as improving documentation. 
 
-ChatGPT was utilised as a trusty coding and learning assistant, while gemini was used to explain hard-to-understand concepts. 
+ChatGPT was utilised as a trusty coding and learning assistant.
 
 All AI-generated suggestions were rigorously reviewed and tailored to meet the project's precise requirements. AI ws merely used as support for this project ans the project is my one work.
 
@@ -432,7 +432,7 @@ The IBM HR Analytics Employee Attrition & Performance dataset contains simulated
 
 As stated this project did not collect real employee records or access confidential HR systems.
 
-If this analysis were used in a real organisation, personal data would need to be handled in line with relevant data protection laes, including the UK General Data Protection Regulation (UK GDPR) as well as the Data Protection Act 2018.
+If this analysis were used in a real organisation, personal data would need to be handled in line with relevant data protection laes, including the UK General Data Protection Regulation (UK GDPR) as well as the Data Protection Act 2018 (Legislation.gov.uk, 2018).
 
 Key principles include:
 
@@ -477,7 +477,7 @@ In a real organisation, workforce analytics could influence recruitment, retenti
 
 Using incomplete or biased information could lead to unfair treatment or discrimination.
 
-Organisations should therefore consider relevant employment and equality legislation, including the Equality Act 2010, when using workforce data to inform decisions.
+Organisations should therefore consider relevant employment and equality legislation, including the Equality Act 2010 (Legislation.gov.uk, 2010), when using workforce data to inform decisions.
 
 Statistical findings should not be used as the sole basis for decisions about individual employees. Human oversight, appropriate consultation and further investigation would also be needed.
 
@@ -519,7 +519,7 @@ These visualisations help stakeholders identify workforce groups with relatively
 The **Attrition Drivers** dashboard examines three factors associated with employee attrition:
 
 - **Overtime:** Compares attrition rates between employees who work overtime and those who do not.
-- **Job Satisfaction:** Compares attrition rates across four satisfaction levels.
+- **Job Satisfaction:** A line chart comparing attrition rates across the four job satisfaction levels.
 - **Employee Tenure:** Shows differences in attrition rates across length-of-service groups.
 
 These visualisations support a more detailed understanding of workforce patterns and provide context for the statistical analysis completed in Python.
@@ -561,15 +561,15 @@ The findings are based on synthetic data and should not be interpreted as eviden
 
 ## Testing and Validation
 
-Testing and validation are important to ensure that the analysis is accurate, the findings are consistent and the dashboards meet the project's business requirements.
+Testing and validation help check that the analysis is accurate, the results are consistent and the dashboards address the project's business requirements.
 
-The project uses data quality checks, statistical validation and dashboard review to assess the reliability of its outputs.
+The project assesses the reliability of its outputs through data quality checks, statistical tests and a review of the dashboards.
 
 ### 1. Data Quality and Preparation
 
 The data preparation process was documented in `01_Data_Preparation_ETL.ipynb`.
 
-The following areas were considered during data preparation:
+The preparation process covered:
 
 - Dataset structure, column names and data types.
 - Missing values and duplicate records.
@@ -577,11 +577,11 @@ The following areas were considered during data preparation:
 - Creation of `Attrition_Flag`, `Age_Group` and `Tenure_Group`.
 - Exporting the cleaned dataset to a versioned CSV file.
 
-The cleaned dataset contains the information required for the subsequent analysis and dashboard development.
+The cleaned dataset includes the information needed for the subsequent analysis and dashboard development.
 
 ### 2. Validation of Attrition Calculations
 
-Attrition rates were calculated using the number of employees who left divided by the total number of employees in each group.
+Attrition rates were calculated by dividing the number of employees who left by the total number of employees in each group 
 
 The overall dataset contains:
 
@@ -590,11 +590,11 @@ The overall dataset contains:
 - Employees who stayed: **1,233**
 - Overall attrition rate: **16.12%**
 
-The overall attrition rate can be verified using:
+The overall attrition rate is calculated as follows:
 
 **(237 / 1,470) × 100 = 16.12%**
 
-Group-level attrition rates were used to compare departments, job roles, overtime status, job satisfaction and tenure.
+Group-level rates were used to compare attrition across departments, job roles, overtime status, job satisfaction and tenure.
 
 ### 3. Statistical Validation
 
@@ -605,22 +605,22 @@ Two Chi-square tests of independence were conducted in `02_Exploratory_Data_Anal
 | Overtime and attrition | 87.5643 | < 0.000001 | Statistically significant association |
 | Job satisfaction and attrition | 17.5051 | 0.000556 | Statistically significant association |
 
-Both p-values were below the significance level of 0.05, providing evidence to reject the respective null hypotheses.
+Both p-values were below the significance threshold of 0.05, providing evidence to reject the corresponding null hypotheses.
 
-These results demonstrate statistical associations, not causal relationships.
+These results indicate statistical associations, not causal relationships.
 
 ### 4. Dashboard Testing
 
-The Tableau dashboards were reviewed against the intended business requirements.
+The Tableau dashboards were checked against the intended business requirements.
 
-The review focused on:
+The review considered:
 
-- Whether the **Workforce Overview** dashboard presents the correct workforce KPIs.
-- Whether the department and job role charts communicate attrition rates.
+- Whether the **Workforce Overview** dashboard displays the correct workforce KPIs.
+- Whether the department and job role charts clearly show attrition rates.
 - Whether the **Attrition Drivers** dashboard presents overtime, job satisfaction and tenure comparisons.
-- Whether chart titles, labels and percentages are understandable.
-- Whether navigation buttons allow users to move between the two dashboards.
-- Whether the synthetic nature of the dataset is communicated clearly.
+- Whether chart titles, labels and percentages are clear and easy to understand.
+- Whether navigation buttons let users switch between the two dashboards.
+- Whether the synthetic nature of the dataset is communicated clearly in the dashboards.
 
 The dashboards were designed to support both high-level business review and more detailed analysis.
 
@@ -638,27 +638,27 @@ All five business requirements are addressed by the completed analysis and dashb
 
 ### 6. Limitations of Validation
 
-The dataset is synthetic, so the results cannot be independently verified against real organisational records.
+The dataset is synthetic, therefore the findings cannot be independently checked against real organisational employee records.
 
-Statistical significance does not establish causation, and the analysis does not account for every possible factor influencing employee departures.
+Statistical significance does not prove causation, and the analysis does not consider every possible factor influencing employee departures.
 
-The project therefore demonstrates a reproducible analytical approach rather than providing validated predictions or conclusions about a real workforce.
+The project therefore demonstrates a reproducible analytical process rather than providing validated predictions or conclusions about a real workforce.
 
 ## Findings and Recommendations
 
-This section summarises the main findings from the employee attrition analysis and outlines recommendations that HR stakeholders could consider when investigating employee retention.
+This section presents the main results of the employee attrition analysis and outlines actions that HR stakeholders could consider when exploring employee retention.
 
 ### Key Findings
 
 **1. Overall Employee Attrition**
 
-Of the 1,470 employees in the dataset, 237 had left the organisation, representing an overall attrition rate of **16.12%**.
+Of the 1,470 employees in the dataset, 237 had left the organisation, giving an overall attrition rate of **16.12%**.
 
-This figure describes the proportion of employees recorded as having left in the dataset. It should not be interpreted as an annual attrition rate.
+This figure represents the share of employees recorded as having left in the dataset. It should not be understood as an annual attrition rate.
 
 **2. Department Attrition**
 
-Attrition rates varied across departments:
+Attrition rates differed between departments:
 
 | Department | Attrition Rate |
 |---|---:|
@@ -666,11 +666,11 @@ Attrition rates varied across departments:
 | Human Resources | 19.05% |
 | Research & Development | 13.84% |
 
-Sales had the highest attrition rate, suggesting that this department would be a useful starting point for further investigation in the project's business scenario.
+Sales had the highest attrition rate, making it a useful starting point for additional investigation within the project's business scenario.
 
 **3. Job Role Attrition**
 
-The highest attrition rates were observed in the following roles:
+The job roles with the highest attrition rates are the following:
 
 | Job Role | Attrition Rate |
 |---|---:|
@@ -680,29 +680,29 @@ The highest attrition rates were observed in the following roles:
 | Sales Executive | 17.48% |
 | Research Scientist | 16.10% |
 
-Sales Representatives had the highest attrition rate among the job roles analysed.
+Sales Representatives had the highest turnover rate among the job roles examined.
 
-However, the size of each employee group should also be considered when interpreting these percentages.
+However, the number of each employee group should also be considered when making sense of these percentages.
 
 **4. Overtime and Attrition**
 
-Employees who worked overtime had an attrition rate of **30.53%**, compared with **10.44%** among employees who did not work overtime.
+Employees who worked overtime had an attrition rate of **30.53%**, compared with **10.44%** among those who did not work overtime.
 
 The Chi-square test identified a statistically significant association between overtime status and attrition (p < 0.000001).
 
-This finding suggests that overtime patterns may warrant further investigation, although the analysis does not demonstrate that overtime causes employees to leave.
+This result suggests that overtime patterns may merit further examination. It should be noted however, that this analysis does not state that overtime was the reason for employees departing.
 
 **5. Job Satisfaction and Attrition**
 
 Employees reporting low job satisfaction had an attrition rate of **22.84%**, compared with **11.33%** among employees reporting very high job satisfaction.
 
-The Chi-square test found a statistically significant association between job satisfaction and attrition (p = 0.000556).
+The Chi-square test also found a statistically significant association between job satisfaction and attrition (p = 0.000556).
 
-The findings suggest that job satisfaction could be an important area for further HR investigation.
+These results suggest that job satisfaction may be an important area for further HR review.
 
 **6. Employee Tenure and Attrition**
 
-Attrition rates differed across tenure groups:
+Attrition rates varied across tenure groups:
 
 | Years at Company | Attrition Rate |
 |---|---:|
@@ -712,63 +712,63 @@ Attrition rates differed across tenure groups:
 | 11–20 years | 6.67% |
 | 21+ years | 12.12% |
 
-Employees with 0–2 years of service had the highest attrition rate, suggesting that early employment experiences may be worth examining.
+Employees with 0–2 years of service had the highest departure rate, their early employment experiences may therefore require further investigation. 
 
 ### Recommendations for HR Stakeholders
 
-Based on these findings, the following actions could be considered in a real organisation:
+Based on these results, the following actions could be considered in a real organisation:
 
-1. **Investigate departments and job roles with higher attrition rates.** HR teams could review employee feedback, working conditions and retention patterns, particularly in Sales and Sales Representative roles.
+1. **Review departments and job roles with higher attrition rates.** HR teams could examine employee feedback, working conditions and retention trends, particularly in Sales and Sales Representative roles.
 
-2. **Review overtime practices.** Managers could examine workload distribution, overtime expectations and employee feedback to understand whether working arrangements contribute to retention concerns.
+2. **Review overtime practices.** Managers could review workload distribution, overtime expectations and employee feedback to explore whether working arrangements contribute to retention problems.
 
-3. **Monitor employee satisfaction.** Regular, confidential employee surveys and feedback discussions could help identify workplace concerns requiring attention.
+3. **Monitor employee satisfaction.** Regular, confidential employee surveys and feedback discussions could help identify workplace issues that may need attention.
 
-4. **Strengthen support for newer employees.** Organisations could review onboarding, training, mentoring and early-career support, particularly during the first two years of employment.
+4. **Strengthen support for newer employees.** Organisations could assess their onboarding, training, mentoring and early-career support, especially during a worker's first two years.
 
-5. **Continue monitoring workforce trends.** HR teams could use regularly updated dashboards and additional data to evaluate whether retention initiatives are associated with improvements over time.
+5. **Keep monitoring workforce trends.** HR teams could use regularly updated dashboards and additional data to assess whether retention initiatives are associated with changes over time.
 
 ### Overall Conclusion
 
-The analysis identified notable differences in attrition rates across departments, job roles, overtime status, job satisfaction and employee tenure.
+The analysis found notable differences in departure rates across departments, job roles, overtime status, job satisfaction and employee tenure.
 
-The statistical tests also identified significant associations between attrition and both overtime status and job satisfaction.
+The statistical tests also found significant associations between departure and both overtime status and job satisfaction.
 
-These findings demonstrate how data analytics can support evidence-informed HR discussions. However, because the dataset is synthetic and the analysis is observational, the recommendations are illustrative and would require validation using real organisational data before implementation.
+These results illustrate how data analytics can inform HR discussions. However, because the dataset is simulated and the analysis is observational, the recommendations are example only, and would require validation using real organisational data before being put into practice.
 
 ## Unfixed Bugs
 
-No known critical bugs remain in the project. The data preparation, exploratory analysis, statistical tests and Tableau dashboards have been tested against the business requirements.
+No critical bugs are currently known in the project. The data preparation, exploratory analysis, statistical tests and Tableau dashboards have been reviewed against the business requirements.
 
 ### Known Limitations
 
 - **Synthetic data:** Findings cannot be generalised to real organisations.
-- **Time limitations:** The dataset does not provide sufficient information to calculate annual attrition rates.
-- **Statistical limitations:** The Chi-square tests identify associations, not causation.
-- **Analysis scope:** The project focuses on descriptive analysis rather than predictive modelling.
+- **Time limitations:** The dataset lacks the information needed to calculate annual attrition rates.
+- **Statistical limitations:** The Chi-square tests identify associations, not the reason employees are leaving.
+- **Analysis scope:** The project uses descriptive analysis rather than predictive modelling.
 - **Dashboard scope:** Only selected workforce variables are visualised.
 
 ### Future Improvements
 
-Future development could include additional workforce data, more advanced statistical analysis, improved dashboard functionality, SQL and machine learning.
+Future development could involve adding more workforce data, applying advanced statistical methods, improving dashboard functionality, and exploring SQL and machine learning.
 
-These are limitations of the project's scope rather than unresolved software bugs.
+These points reflect the limitations of the project's scope rather than unresolved software bugs.
 
 ## Development Roadmap
 
 ### Challenges and Solutions
 
-Throughout the project, several challenges provided opportunities to develop technical and problem-solving skills.
+Throughout the project, several challenges were presented that gave opportunities to develop technical and problem-solving skills.
 
 **1. Data Preparation**
 
-Preparing the dataset required understanding its structure, selecting relevant variables and creating new columns for analysis.
+Preparing the dataset involved understanding its structure, choosing relevant variables and creating new columns for analysis.
 
-This was addressed using Python and pandas to inspect, transform and organise the data into a cleaned, versioned dataset.
+This was addressed using Python and pandas to inspect, transform and organise the data into a cleaned, version-controlled dataset.
 
 **2. Statistical Analysis**
 
-Interpreting the Chi-square tests required understanding statistical significance and the difference between association and causation.
+Interpreting the Chi-square tests required understanding statistical significance and the distinguishingguishing association from causation.
 
 This was addressed by comparing p-values against a significance level of 0.05 and carefully explaining the limitations of the findings.
 
@@ -776,7 +776,7 @@ This was addressed by comparing p-values against a significance level of 0.05 an
 
 Designing dashboards required balancing detailed analysis with clear communication for non-technical stakeholders.
 
-This was addressed by separating the findings into two dashboards, using descriptive charts and KPIs, and adding navigation buttons to improve usability.
+This was addressed by organising the findings into two dashboards, using descriptive charts and KPIs, and adding navigation buttons to improve usability.
 
 **4. Project Organisation**
 
@@ -788,32 +788,31 @@ GitHub Projects was used to organise tasks, while Git commits and versioned data
 
 The project strengthened practical skills in Python, pandas, exploratory data analysis, statistical hypothesis testing, Tableau, GitHub and technical documentation.
 
-It also improved the ability to translate business requirements into analytical questions and communicate findings to different audiences.
+It also improved the ability to turn business requirements into analytical questions and communicate findings to different audiences.
 
 ### Future Development
 
-Potential future improvements include:
+possible future improvements include:
 
 - Learning and applying SQL to query workforce data.
-- Exploring machine learning models to predict employee attrition.
-- Investigating additional variables and statistical methods.
-- Enhancing Tableau interactivity and dashboard accessibility.
+- Exploring machine learning models for predicting employee attrition.
+- Examining additional variables and statistical methods.
+- Improving Tableau interactivity and dashboard accessibility.
 - Applying the analytical workflow to more realistic or updated datasets.
 
-SQL and machine learning are future development goals and were not implemented in this project.
+SQL and machine learning remain future development goals and was decided to not implemented in this project.
 
 ## Deployment
 
 The Employee Attrition Analytics project was developed using Python and Jupyter Notebook for data preparation and analysis, while Tableau Desktop was used to create the interactive dashboards.
 
-The completed dashboards were published to **Tableau Public**, allowing users to explore the findings online.
+The completed dashboards were published to **Tableau Public**, letting users to explore the findings online.
 
 The project files, including the notebooks, processed datasets and Tableau workbook, are available in the GitHub repository.
 
 ### Accessing the Dashboards
 
-**Tableau Public:** [View Employee Attrition Analytics Dashboard]
-(https://public.tableau.com/app/profile/mumtaz.ibrahim7759/viz/Employee_Attrition_Dashboard_17928843071440/Dashboard1-WorkforceOverview?publish=yes)
+**Tableau Public:** [View Employee Attrition Analytics Dashboard](https://public.tableau.com/app/profile/mumtaz.ibrahim7759/viz/Employee_Attrition_Dashboard_17928843071440/Dashboard1-WorkforceOverview?publish=yes)
 
 The published workbook contains two interactive dashboards:
 
@@ -841,23 +840,14 @@ The Tableau dashboards can be viewed online without installing Python or running
 
 The project used the following libraries and tools:
 
-- **pandas:** Used to load, inspect, clean and transform employee data, create additional variables, group records and calculate attrition rates.
-- **SciPy:** Used to conduct Chi-square tests of independence to examine associations between employee attrition, overtime status and job satisfaction.
-- **Jupyter Notebook:** Used to develop
+## Main Data Analysis Libraries
 
-### Heroku (optional)
+- **pandas:** Used for data cleaning, transformation and calculating attrition rates.
+- **SciPy:** Used for Chi-square hypothesis testing.
+- **Jupyter Notebook:** Used to develop and document the Python analysis.
+- **Tableau:** Used to build and publish the interactive dashboards.
+- **Git and GitHub:** Used for version control and project management.
 
-* This section is necessary only if you are deploying a Streamlit app to Heroku as part of your submission for units 2 and 3. 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the `.python-version` Python version to a [Heroku-22](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App at the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the `.slugignore` file.
 
 ## Credits
 
@@ -918,5 +908,7 @@ Tableau (n.d.) *Create a Dashboard*. Available at: https://help.tableau.com/curr
 
 I would like to acknowledge Code Institute for providing the learning materials and project framework that supported the development of this capstone project.
 
-This project provided an opportunity to apply Python, statistical analysis and data visualisation skills to a business-focused scenario.
+This project provided an opportunity to apply Python, statistical analysis and data visualisation skills to a business-focused scenario. 
+
+I would also like to thank myself for putting in as much work as i did. And ChatGPT for being my help-mate. 
 
