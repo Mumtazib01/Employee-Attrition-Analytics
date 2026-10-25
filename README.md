@@ -644,6 +644,98 @@ Statistical significance does not establish causation, and the analysis does not
 
 The project therefore demonstrates a reproducible analytical approach rather than providing validated predictions or conclusions about a real workforce.
 
+## Findings and Recommendations
+
+This section summarises the main findings from the employee attrition analysis and outlines recommendations that HR stakeholders could consider when investigating employee retention.
+
+### Key Findings
+
+**1. Overall Employee Attrition**
+
+Of the 1,470 employees in the dataset, 237 had left the organisation, representing an overall attrition rate of **16.12%**.
+
+This figure describes the proportion of employees recorded as having left in the dataset. It should not be interpreted as an annual attrition rate.
+
+**2. Department Attrition**
+
+Attrition rates varied across departments:
+
+| Department | Attrition Rate |
+|---|---:|
+| Sales | 20.63% |
+| Human Resources | 19.05% |
+| Research & Development | 13.84% |
+
+Sales had the highest attrition rate, suggesting that this department would be a useful starting point for further investigation in the project's business scenario.
+
+**3. Job Role Attrition**
+
+The highest attrition rates were observed in the following roles:
+
+| Job Role | Attrition Rate |
+|---|---:|
+| Sales Representative | 39.76% |
+| Laboratory Technician | 23.94% |
+| Human Resources | 23.08% |
+| Sales Executive | 17.48% |
+| Research Scientist | 16.10% |
+
+Sales Representatives had the highest attrition rate among the job roles analysed.
+
+However, the size of each employee group should also be considered when interpreting these percentages.
+
+**4. Overtime and Attrition**
+
+Employees who worked overtime had an attrition rate of **30.53%**, compared with **10.44%** among employees who did not work overtime.
+
+The Chi-square test identified a statistically significant association between overtime status and attrition (p < 0.000001).
+
+This finding suggests that overtime patterns may warrant further investigation, although the analysis does not demonstrate that overtime causes employees to leave.
+
+**5. Job Satisfaction and Attrition**
+
+Employees reporting low job satisfaction had an attrition rate of **22.84%**, compared with **11.33%** among employees reporting very high job satisfaction.
+
+The Chi-square test found a statistically significant association between job satisfaction and attrition (p = 0.000556).
+
+The findings suggest that job satisfaction could be an important area for further HR investigation.
+
+**6. Employee Tenure and Attrition**
+
+Attrition rates differed across tenure groups:
+
+| Years at Company | Attrition Rate |
+|---|---:|
+| 0–2 years | 29.82% |
+| 3–5 years | 13.82% |
+| 6–10 years | 12.28% |
+| 11–20 years | 6.67% |
+| 21+ years | 12.12% |
+
+Employees with 0–2 years of service had the highest attrition rate, suggesting that early employment experiences may be worth examining.
+
+### Recommendations for HR Stakeholders
+
+Based on these findings, the following actions could be considered in a real organisation:
+
+1. **Investigate departments and job roles with higher attrition rates.** HR teams could review employee feedback, working conditions and retention patterns, particularly in Sales and Sales Representative roles.
+
+2. **Review overtime practices.** Managers could examine workload distribution, overtime expectations and employee feedback to understand whether working arrangements contribute to retention concerns.
+
+3. **Monitor employee satisfaction.** Regular, confidential employee surveys and feedback discussions could help identify workplace concerns requiring attention.
+
+4. **Strengthen support for newer employees.** Organisations could review onboarding, training, mentoring and early-career support, particularly during the first two years of employment.
+
+5. **Continue monitoring workforce trends.** HR teams could use regularly updated dashboards and additional data to evaluate whether retention initiatives are associated with improvements over time.
+
+### Overall Conclusion
+
+The analysis identified notable differences in attrition rates across departments, job roles, overtime status, job satisfaction and employee tenure.
+
+The statistical tests also identified significant associations between attrition and both overtime status and job satisfaction.
+
+These findings demonstrate how data analytics can support evidence-informed HR discussions. However, because the dataset is synthetic and the analysis is observational, the recommendations are illustrative and would require validation using real organisational data before implementation.
+
 ## Unfixed Bugs
 
 * Please list any unfixed bugs and explain why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
