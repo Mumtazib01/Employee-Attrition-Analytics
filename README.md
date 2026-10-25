@@ -285,7 +285,49 @@ Using GitHub Projects alongside version control further supported task organisat
 
 ## The rationale to map the business requirements to the Data Visualisations
 
-* List your business requirements and a rationale for mapping them to the Data Visualisations
+The Tableau dashboards were engineered to transform the five business requirements into transparent, intuative visualisations.
+
+Two distinct dashboards were created to differentiate between an overall workforce summary from a more detailed expolaration of factors behind employee attrition.
+
+### Business Requirements and Visualisation Mapping
+
+| Business Requirement | Visualisation | Dashboard | Rationale |
+|---|---|---|---|
+| BR1 — Department Attrition | Department attrition rate bar chart | Workforce Overview | Allows users to compare attrition percentages across departments and identify those with higher rates. |
+| BR2 — Job Role Attrition | Job role attrition rate bar chart | Workforce Overview | Highlights differences between job roles and makes it easier to identify roles with relatively high attrition. |
+| BR3 — Overtime and Attrition | Overtime attrition rate bar chart | Attrition Drivers | Compares employees who work overtime with those who do not, making the difference in attrition rates easy to understand. |
+| BR4 — Job Satisfaction and Attrition | Job satisfaction attrition rate bar chart | Attrition Drivers | Shows how attrition rates vary across the four satisfaction levels. |
+| BR5 — Employee Tenure and Attrition | Tenure group attrition rate bar chart | Attrition Drivers | Compares attrition rates across length-of-service groups to identify differences between newer and longer-serving employees. |
+
+### Visualisation Design Decisions
+
+**Bar charts** were chosen due to them allowing users to compare turnover rates across categories without needing specialised statistical knowledge.
+
+The **Workforce Overview** dashboard incorporates three key performance indicators (KPIs):
+
+- **Total Employees:** 1,470
+- **Employees Who Left:** 237
+- **Overall Attrition Rate:** 16.12%
+
+These KPIs provide immediate context before delving into departmental and job role comparisons.
+
+The **Attrition Drivers** dashboard centers on overtime, job satisfaction and tenure, giving stakeholders the ability to examine patterns that may require follow-up analysis.
+
+### Dashboard Navigation and User Experience
+
+Navigation buttons allow users to seamlessly move between the two dashboards without being forced into returning to the Tableau workbook menu.
+
+The dashboard layout utilises descriptive titles, percentage-based metrics and supports explanations to further enhance comprehension for HR managers, senior managers and data analysts.
+
+The graphics focus on attrition **rates rather than departure counts alone**, facilitating fairer comparisons among groups of different sizes.
+
+### Communicating Findings Responsibly
+
+The dashboards differentiate observed patterns from established causes.
+
+For example, while a higher attrition rate among employees working overtime indicates an association in this dataset it does not imply that overtime causes employees to depart.
+
+Turthermore, the dashboards clearly states that the records are syntethic to prevent users from believing that the findings come from real-world organisation.
 
 ## Analysis techniques used
 
