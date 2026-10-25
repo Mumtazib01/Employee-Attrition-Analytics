@@ -119,7 +119,76 @@ The findings are intended to support further research and inform decision-making
 
 ## Hypothesis and how to validate?
 
-* List here your project hypothesis(es) and how you envision validating it (them) 
+This research explores two core hypotheses regarding employee attrition: the relationship between overtime and attrition, and the connection between job satisfaction and attrition.
+
+Both hypotheses were evaluated using the **Chi-square test of independence**, in Python. This statistical test determines whether a measurable connection exists between the two categorical variables.
+
+A significance level of **0.05 (5%)** was used for both assessments. A p-value dropping below 0.05 signals a statistically significant association, providing enough evidence to reject the null hypothesis.
+
+### Hypothesis 1 — Overtime and Employee Attrition
+
+**Null hypothesis (H0):** There is no statistically significant association between overtime status and employee attrition.
+
+**Alternative hypothesis (H1):** A statistically significant association exists between overtime status and employee attrition.
+
+**Validation Method:**
+
+- Compare attrition rates between overtime workers and employees who do not.
+- Construct a contingency table illustrating overtime status against attrition.
+- Execute the Chi-square test of independence.
+- Make a comparison between the resulting p-value and the significance level of 0.05.
+
+**Results:**
+
+- Employees working overtime: **30.53% attrition rate**.
+- Employees not working overtime: **10.44% attrition rate**.
+- Chi-square statistic: **87.5643**.
+- p-value: **less than 0.000001**.
+
+**Conclusion:**
+
+Because the p-value is below 0.05, that means the null hypothesis is rejected. This indicating a statistically significant association between overtime status and employee attrition.
+
+Staff engaged overtime work exhibited rate of company departure within this dataset, nonetheless this does not prove that overtime work forces employees to leave the company.
+
+### Hypothesis 2 — Job Satisfaction and Employee Attrition
+
+**Null hypothesis (H0):** There is no statistically significant association between job satisfaction level and employee attrition.
+
+**Alternative hypothesis (H1):** There is a statistically significant association between job satisfaction level and employee attrition.
+
+**Validation Method:**
+
+- Compute turnover rates across the four levels of job satisfaction.
+- Create a contingency table maping job satisfaction against attrition.
+- Conduct the Chi-square test of independence.
+- Assess the resulting p-value against the significance level of 0.05.
+
+**Results:**
+
+| Job Satisfaction Level | Attrition Rate |
+|---|---:|
+| 1 — Low | 22.84% |
+| 2 — Medium | 16.43% |
+| 3 — High | 16.52% |
+| 4 — Very High | 11.33% |
+
+- Chi-square statistic: **17.5051**.
+- p-value: **0.000556**.
+
+**Conclusion:**
+
+The p-value for this hypothesis is also below 0.05, leading to the null hypothesis being rejected. The data delivers statistically significant proof of a correlation between job satisfaction and employee attrition.
+
+Employees who were not satisfied in their job had the highest attrition rate, whereas those indicating very high job satisfaction recorded the lowest. Despite these findings, there in no evidence of what causes attrition rates. 
+
+### Statistical Limitations
+
+Although both evaluations uncovered statistically significant associations, the results warrant careful interpretation.
+
+The dataset used is synthetic and does not mirror a real company. Furthermore, the Chi-square tests reveals associations but not cause-and-effect relationships. Other variables may also impact workforce attrition.
+
+Consequently, these findings should be viewed as demonstrations of how statistical analysis can guide Human Resource investigations rather than conclusive evidence concerning real-world employee behaviour.
 
 ## Project Plan
 
