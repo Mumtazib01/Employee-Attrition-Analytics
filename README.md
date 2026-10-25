@@ -491,13 +491,73 @@ These steps help stakeholders interpret the findings carefully and avoid placing
 
 Overall, the project demonstrates how HR analytics can support evidence-informed discussions while recognising the importance of privacy, fairness, transparency and responsible decision-making.
 
-## Dashboard Design (optional)
+## Dashboard Design
 
-* Feel free to delete this section if this is a data visualisation only (unit 1 or 2) project submission.
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during project development, you may revisit your dashboard plan to update a feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+The project includes two interactive Tableau dashboards designed to communicate employee attrition findings to HR managers, department managers, senior management and data analysts.
+
+The dashboards separate high-level workforce information from a more detailed analysis of attrition patterns. This allows users to begin with an overview before exploring specific factors.
+
+### Dashboard 1 — Workforce Overview
+
+The **Workforce Overview** dashboard presents a summary of the workforce and highlights differences in employee attrition across departments and job roles.
+
+It includes three key performance indicators (KPIs):
+
+- **Total Employees:** 1,470
+- **Employees Who Left:** 237
+- **Overall Attrition Rate:** 16.12%
+
+It also includes:
+
+- **Department Attrition Rate:** A chart comparing attrition percentages across departments.
+- **Job Role Attrition Rate:** A chart comparing attrition percentages across job roles.
+
+These visualisations help stakeholders identify workforce groups with relatively high attrition rates and decide where further investigation may be useful.
+
+### Dashboard 2 — Attrition Drivers
+
+The **Attrition Drivers** dashboard examines three factors associated with employee attrition:
+
+- **Overtime:** Compares attrition rates between employees who work overtime and those who do not.
+- **Job Satisfaction:** Compares attrition rates across four satisfaction levels.
+- **Employee Tenure:** Shows differences in attrition rates across length-of-service groups.
+
+These visualisations support a more detailed understanding of workforce patterns and provide context for the statistical analysis completed in Python.
+
+### Navigation and User Experience
+
+Navigation buttons were added to both dashboards to improve usability.
+
+- **Workforce Overview:** Includes a button labelled "View Attrition Drivers →" that opens the second dashboard.
+- **Attrition Drivers:** Includes a button labelled "← Workforce Overview" that returns users to the first dashboard.
+
+The navigation buttons use a navy background and white text to make them visually distinguishable from the dashboard content.
+
+The two-dashboard structure allows users to explore information progressively rather than displaying every visualisation on a single page.
+
+### Accessibility and Communication
+
+The dashboards were designed to communicate findings to both technical and non-technical audiences.
+
+Design considerations include:
+
+- Descriptive dashboard and chart titles.
+- Clearly displayed attrition percentages.
+- KPI indicators that summarise the workforce.
+- Separate dashboard pages to reduce information overload.
+- Visible navigation buttons.
+- Supporting explanations that help users interpret the results.
+- Clear identification of the dataset as synthetic.
+
+The dashboards present statistical findings in an accessible format while the Jupyter notebooks provide the more detailed analytical methods for technical users.
+
+### Design Limitations
+
+The dashboards provide descriptive comparisons rather than predictions of future employee departures.
+
+Although the visualisations highlight differences between employee groups, they cannot establish why employees leave.
+
+The findings are based on synthetic data and should not be interpreted as evidence about an actual organisation.
 
 ## Unfixed Bugs
 
