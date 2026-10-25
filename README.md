@@ -2,13 +2,13 @@
 
 **Employee Attrition Analytics** is a data analytics project that utilises the IBM HR Analytics Employee Attrition & Performance dataset to investigate patterns in employee departures.
 
-This project aims to support Human Resources (HR) decision-making by examining employee attrition across various factors, including department, job role, overtime status, job satisfaction and length of service.
+This project aims to support Human Resources (HR) decision-making by examining employee attrition across various factors, including department, job role, overtime status, job satisfaction, and length of service.
 
-The analysis was conducted in Jupyter Notebook using Python and Pandas to perform data preparation, exploratory data analysis (EDA) and statistical hypothesis testing. The findings are presented through two interactive Tableau dashboards: **Workforce Overview** and **Attrition Drivers**.
+The analysis was conducted in Jupyter Notebook using Python and pandas for data preparation, exploratory data analysis (EDA), and statistical hypothesis testing. The findings are presented in two interactive Tableau dashboards: **Workforce Overview** and **Attrition Drivers**.
 
-The dashboards enable users to examine key workforce metrics, compare attrition rates and navigate between an overall summary and a more detailed analysis.
+The dashboards enable users to examine key workforce metrics, compare attrition rates, and navigate between an overall summary and more detailed analyses.
 
-The dataset contains 1,470 synthetic employee records. Therefore, rather than representing employee behaviour in an actual organisation, the findings demonstrate analytical methods.
+The dataset contains 1,470 synthetic employee records. Therefore, the findings demonstrate analytical methods rather than describe employee behaviour in an actual organisation.
 
 The associations observed in the analysis should not be interpreted as evidence of causation.
 
@@ -16,54 +16,106 @@ The associations observed in the analysis should not be interpreted as evidence 
 
 ## Dataset Content
 
-This project used **IBM HR Analytics Employee Attrition & Performance** dataset, which is publicly available on [Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset).
+This project uses the **IBM HR Analytics Employee Attrition & Performance** dataset, which is publicly available on [Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset).
 
-The dataset encompasses **1,470 employee records across 35 original columns**, detailing employee demographics, job specifications, workplace environments and employee attrition.
+The dataset contains **1,470 employee records across 35 original columns**, covering employee demographics, job details, workplace environments, and attrition.
 
-The dataset is entirely synthetic, which means that it consists of simulated employee data rather than genuine employee records. This ensures that HR analytics data can be demonstrated safely without exposing real workers' personal information.
+The dataset is entirely synthetic, consisting of simulated rather than genuine employee records. This allows HR analytics methods to be demonstrated without exposing real employees' personal information.
 
 ### Dataset Structure
 
 Each row corresponds to one employee, and the `Attrition` column indicates whether that employee has left the organisation (`Yes`) or stayed (`No`).
 
-The primary variables investigated in this analysis are as followed:
+The primary variables examined in this analysis are as follows:
 
 | Variable | Description |
 |---|---|
 | `Attrition` | Whether an employee left the organisation |
 | `Department` | Department in which the employee works |
-| `JobRole` | The specific job title of the employee |
+| `JobRole` | The employee's job role |
 | `OverTime` | Whether the employee engages in overtime work |
 | `JobSatisfaction` | Job satisfaction rating from 1 (Low) to 4 (Very High) |
-| `YearsAtCompany` | Number of years the worker has been at the company |
-| `Age` | Employee's age in years |
+| `YearsAtCompany` | Number of years the employee has worked at the company |
+| `Age` | The employee's age in years |
 
 ### Data Preparation
 
-The intial data cleaning and preprocessing of the original dataset was coducted using Python and Pandas in the `01_Data_Preparation_ETL.ipynb` notebook.
+Initial data cleaning and preprocessing of the original dataset were conducted using Python and pandas in the `01_Data_Preparation_ETL.ipynb` notebook.
 
 To support the analysis, additional variables were introduced:
 
-- `Attrition_Flag`: Converts attrition into a numerical value, where 1 represents an employee who left and 0 denotes an employee who remained.
+- `Attrition_Flag`: Converts attrition into a numerical value, where 1 represents an employee who left and 0 represents an employee who stayed.
 - `Age_Group`: Groups employees into various age brackets.
-- `Tenure_Group`: Puts employees in groups according to their length of service.
+- `Tenure_Group`: Groups employees according to their length of service.
 
-The finalised and cleaned dataset was saved and exported as a CSV file and stored within a version-controlled folder to guarantee reproducibility and further investigation.
+The cleaned dataset was exported as a CSV file and stored in a version-controlled folder to support reproducibility and future analysis.
 
 ### Dataset Limitations
 
-While this dataset provides useful insights into workforce patterns, it is not free of limitations:
+While this dataset provides useful insights into workforce patterns, it has several limitations:
 
-- The records are synthetic and lack real-world employee records.
-- It is resctricted to a single dataset rather than multiple organisations.
-- It does not establish the reasons for employee departures.
-- The dataset lacks sufficient time-based information needed to compute a precise annual employee attrition rate.
+- The records are synthetic and do not represent real employees.
+- The analysis is limited to a single dataset rather than data from multiple organisations.
+- The dataset does not explain the reasons for employee departures.
+- It lacks the time-based information needed to calculate a precise annual attrition rate.
 
-These constraints are actively factored when it comes to the interpretation of the findings and the formulation of strategic HR recommendations.
+These limitations are considered when interpreting the findings and developing strategic HR recommendations.
 
 ## Business Requirements
 
-* Describe your business requirements
+### Business Problem
+
+Employee attrition can create significant challenges for organisations, including recruitment costs, the loss of experienced employees, and disruption to workforce continuity.
+
+This project focuses on the Human Resources (HR) team's need to analyse employee departure patterns and identify workforce groups that warrant further examination.
+
+The primary goal of this analysis is to provide data-driven insights that help HR stakeholders make informed decisions about improving employee retention and optimising workforce management.
+
+### Target Audience
+
+The target audience for this project comprises:
+
+- **HR Managers:** Identify workforce groups experiencing higher attrition rates and assess potential retention risks.
+- **Department Managers:** Understand departure patterns across departments and job roles.
+- **Senior Management:** Review high-level workforce indicators to inform strategic workforce planning.
+- **Data Analysts:** Examine the analytical methods, statistical tests, and supporting evidence.
+
+### Business Requirements
+
+The project is structured around five key business requirements:
+
+**BR1 — Department Attrition**
+
+Determine which departments have the highest employee attrition rates, helping HR teams identify where employee departures are most prevalent.
+
+**BR2 — Job Role Attrition**
+
+Compare attrition metrics across job roles to highlight those that may warrant further investigation or targeted retention support.
+
+**BR3 — Overtime and Attrition**
+
+Assess whether overtime is associated with attrition by comparing employees who work overtime with those who do not. Statistical hypothesis testing will be used to evaluate whether an association exists.
+
+**BR4 — Job Satisfaction and Attrition**
+
+Analyse how attrition rates vary across job satisfaction levels and use statistical hypothesis testing to assess whether an association exists.
+
+**BR5 — Employee Tenure and Attrition**
+
+Assess attrition by length of service to determine whether departure rates differ across tenure groups.
+
+### Business Success Criteria
+
+The project will be considered successful if it fulfils the following criteria:
+
+1. Provides evidence-based answers to all five business requirements using the available dataset.
+2. Accurately calculates and presents attrition rates.
+3. Applies appropriate statistical methods to analyse the selected relationships.
+4. Presents the findings in intuitive, interactive, and accessible Tableau dashboards.
+5. Offers evidence-informed recommendations while clearly acknowledging the dataset's synthetic nature and limitations.
+6. Demonstrates a commitment to handling and interpreting employee-related data responsibly.
+
+The findings are intended to support further research and inform decision-making, rather than dictate HR actions or explain the reasons for employee departures.
 
 ## Hypothesis and how to validate?
 
