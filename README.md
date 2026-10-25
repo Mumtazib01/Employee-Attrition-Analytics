@@ -192,9 +192,96 @@ Consequently, these findings should be viewed as demonstrations of how statistic
 
 ## Project Plan
 
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+### Project Management Approach
+
+The project followed a structured data analytics workflow, progressing from defining business requirements through data preparation, conducting analysis, hypotheses testing and reporting the findings.
+
+A Projects Kanban board in GitHub was used for task organisation, progress tracking, as well as monitor user stories throughout development.
+
+The project was segmented into clear manageable stages to keep the analysis focused on the five business requirements.
+
+### Project Development Stages
+
+**1. Planning and Business Understanding**
+
+The initial phase of the project involved defining the business problem, identifying the intended audience and establishing five concrete business criterias.
+
+User stories were established to structure the requirements into manageable tasks. GitHub projects was used to track progress.
+
+**2. Data Collection and Understanding**
+
+The IBM HR Analytics Employee Attrition & Performance dataset was downloaded from Kaggle.
+
+The dataset was evaluated beforehand to understand its underlying structure, active variables and inherent.
+
+**3. Data Preparation and Processing**
+
+Leveraging Python and Pandas in Jupyter Notebook, the dataset was inspected, cleaned and preparef for analysis. 
+
+New variables, such as `Attrition_Flag`, `Age_Group` and `Tenure_Group`, were created to assist with the analysis. 
+
+The refined dataset was saved into a dedicated version-controlled directory to maintain a consistent data source for later analysis and visualisation.
+
+**4. Exploratory Data Analysis (EDA)**
+
+Exploratory data analysis investigated turnover trends across organisational departments, job roles, overtime status, job satisfaction and employee service length.
+
+Attrition rates were calculated and compared across different workforce segments. 
+
+**5. Statistical Hypothesis Testing**
+
+Two Chi-square tests of independence were employed to examine associations between employee attrition and factors like overtime and job satisfaction.
+
+Outcomes were assessed using a significance level of 0.05, while keeping in mind that statistical correlation does not imply causation.
+
+**6. Dashboard Development and Implementation**
+
+Two interactive dashboards were created in Tableau:
+
+- **Workforce Overview:** Displays macro workforce statistics alongside attrition rates categorised by department and job role.
+- **Attrition Drivers:** Examines departure dynamics associated with overtime hours, job satisfaction levels and career tenure.
+
+Navigation buttons were implemented to make it easier for users to move between the dashboards.
+
+The finished Tableau workbook was stored inside the project repository and deployed to Tableau Public to ensure accessibility for stakeholders.
+
+**7. Testing and Evaluation**
+
+The project was evaluated against the initial business requirements. Including a review of the data preparation process, the varification of calculations and statistical outputs, as well as ensuring that the dashboards convey insights effectively. 
+
+Dashboard navigation, chart titles and the presentation of key insights were also factored in.
+
+**8. Documentation and Version Control**
+
+Git and GitHub were used to track changes throughout the project.
+
+The README documents thoroughly outlined the dataset, business requirements, methodology, tested hypotheses, dashboard architectures, findings, constrainst and development process.
+
+Meaningful commits were used to perserve a transparent, auditable history of progress.
+
+### Data Management
+
+The project utilised separate folders for raw data, prcessed data, Jupyter notebooks and Tableau exports.
+
+The cleaned dataset resides in a versioned folder, allowing for a consistent dataset while preserving original information. 
+
+This framework promotes reproducibility, organisation and future enhancements.
+
+### Maintenance and Future Updates
+
+For future enhancements, though the current project is based on a fixed synthetic dataset, it could be updated with new data, if it becomes available. 
+
+Future upkeep would entail validating the data structure, rerunning of data prep and analysis notebooks, verifying numerical results, refreshing the Tableau visualisations and refreshing the project documentation.
+
+Potential future expansions may include Machine Learning and SQL anlyses. 
+
+### Methodology Rationale
+
+The chosen methodology underscores a structured workflow that effectively connects business questions, with data preparation, statitical examination and visual dashboard presentation.
+
+The utilisation of Python and pandas were deemed appropriate for data handling and analysing, while Tableau was selected to translate the findings into intuitive visual formats for both technical and non-technical users.
+
+Using GitHub Projects alongside version control further supported task organisation, documentation and project traceability through development.
 
 ## The rationale to map the business requirements to the Data Visualisations
 
