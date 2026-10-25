@@ -331,10 +331,94 @@ Turthermore, the dashboards clearly states that the records are syntethic to pre
 
 ## Analysis techniques used
 
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques? Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+This project relied on a mix of data preparation, exploratory data analysis (EDA), statistical hypothesis testing and data visualisation to uncover why employees leave.
+
+The analysis was executed in two Jupyter notebooks using Python, with results communicated in interactive Tableau dashboards.
+
+### 1. Data Preparation and ETL
+
+The Journey began by preparing the dataset for analysis with the help pf Python and Pandas.
+
+The Extract, Transform and Load (ETL) process looked like this:
+
+- **Extract:** Pulling in the original employee dataset from a CSV file.
+- **Transform:** Inspecting the dataset, checking data health and building helpful new variables to power the analysis.
+- **Load:** Exporting the polished dataset into a versioned CSV file sp everything stayed consistent moving forward.
+
+The `Attrition_Flag`, `Age_Group` and `Tenure_Group` variables were built to make comparisons and calculations much easier.
+
+Every step of this process was logged inside `01_Data_Preparation_ETL.ipynb`.
+
+### 2. Exploratory Data Analysis (EDA)
+
+Exploratory data analysis was conducted to unearth patterns in employee departures.
+
+The analysis examined:
+
+- Overall employee attrition.
+- Attrition broken down by department.
+- Attrition rates by job role.
+- Attrition rates by overtime status.
+- Attrition rates by job satisfaction.
+- Attrition rates by career tenure.
+
+Pandas was used to make comparisons between groups and to determine the exact percentage of employees who left the company within each category.
+
+The baseline turnover rate was calculated using this formula:
+
+**Attrition Rate (%) = (Number of Employees Who Left / Total Number of Employees) × 100**
+
+For instance, 237 of the 1,470 employees in the dataset had departed, giving an overall attrition rate of approximately **16.12%**.
+
+Relying on percentages rather than departure counts alone made it easier to compare temans of vastly different sizes.
+
+The exploratory analysis was logged inside `02_Exploratory_Data_Analysis.ipynb`.
+
+### 3. Statistical Hypothesis Testing
+
+The Chi-square test of independence was utilised to assess relationships between employee attrition and two categorical variables:
+
+- Overtime status.
+- Job satisfaction level.
+
+The tests were evaluated using a standard significance threshold of 0.05.
+
+Both tests returned p-values below 0.05, giving statistically significant evidence of associations existing between these factors.
+
+Even so, the tests point to relationships rather than causation, meaning the results must be interpreted within the contraints of the synthetic dataset.
+
+### 4. Data Visualisation
+
+Tableau was utilised to craft two interactive dashboards.
+
+The **Workforce Overview** dashboard highlights key workforce indicators and compares turnover rates across departments and job roles.
+
+The **Attrition Drivers** dashboard focuses on attrition patterns by overtime status, job satisfaction and employee tenure.
+
+Bar charts simplified the comparisons of the various categories and KPI indicators provided an instant snapshot of the workforce.
+
+Navigation buttons were built in so users can go easily go from one dashboard to the other.
+
+### 5. Methodological Limitations and Alternative Approaches
+
+A few limitations influenced how this analysis was put together:
+
+- **Synthetic data:** Because the data is simulated, generalisability of the data is restricted without further evidence.
+- **No causal evidence:** Statistical associations show what worker left but not why.
+- **Limited time information:** The dataset does not support calculation of an annual attrition rate.
+- **Group-level comparisons:** Differences between groups may be influenced by outside variables that were not included in the dataset.
+
+Logistic regression as well as other more advanced methods could be applied in the future to examine several variables together.However, for this project it was not needed.
+
+Ultimately, The chosen techniques hit the sweet spot for uncovering initial turnover trends and presenting understandable findings to HR stakeholders.
+
+### 6. Use of Generative AI
+
+Generative AI tools played a supportive role throughout the development of this project. This includes brainstorming, giving explanations of of analytical concepts, assissting with code creation as well as improving documentation. 
+
+ChatGPT was utilised as a trusty coding and learning assistant, while gemini was used to explain hard-to-understand concepts. 
+
+All AI-generated suggestions were rigorously reviewed and tailored to meet the project's precise requirements. AI ws merely used as support for this project ans the project is my one work.
 
 ## Ethical considerations (optional)
 
