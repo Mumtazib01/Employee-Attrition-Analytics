@@ -859,28 +859,64 @@ The project used the following libraries and tools:
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App at the top of the page to access your App.
 6. If the slug size is too large, then add large files not required for the app to the `.slugignore` file.
 
-## Main Data Analysis Libraries
-
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
-
 ## Credits
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials; however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section into Content and Media, depending on what you include in your project. 
+### Content and Coding Resources
 
-### Content 
+The following tools and online resources supported the development of the Employee Attrition Analytics project:
 
-- The text for the Home page was taken from the Wikipedia Article A
-- Instructions on how to implement form validation were taken from a [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- **Kaggle:** [IBM HR Analytics Employee Attrition & Performance](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset) — Source of the synthetic employee dataset.
+- **Python:** [Python Official Website](https://www.python.org/) — Programming language used for data preparation and analysis.
+- **pandas:** [Official Documentation](https://pandas.pydata.org/docs/) — Reference for data manipulation, cleaning, grouping and calculating attrition rates.
+- **SciPy:** [Chi-square Test Documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html) — Reference for statistical hypothesis testing.
+- **Jupyter:** [Jupyter Documentation](https://docs.jupyter.org/en/latest/) — Notebook environment used to develop and document the analysis.
+- **Tableau:** [Tableau Dashboard Documentation](https://help.tableau.com/current/pro/desktop/en-gb/dashboards_create.htm) — Reference for dashboard creation, layout and navigation.
+- **GitHub:** [GitHub Documentation](https://docs.github.com/en) — Reference for version control, repositories and project management.
+- **Code Institute:** Provided the project requirements, learning materials and README template.
 
 ### Media
 
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
+- The Code Institute logo was obtained from the official Code Institute image resource.
+- The Tableau dashboards and visualisations were developed for this project using the selected dataset.
+- No external stock images were used.
 
+### Use of Artificial Intelligence
 
+**ChatGPT (OpenAI)** was used to support project planning, code development, debugging, understanding Python and statistical concepts, interpreting analytical results, developing dashboard features and preparing README documentation.
 
-## Acknowledgements (optional)
+AI-generated suggestions were reviewed and adapted to the project requirements. Data calculations, statistical results and dashboard functionality were tested during development.
 
-* Thank the people who supported this project.
+AI assistance is acknowledged to maintain transparency about its role in the project.
+
+## References
+
+Code Institute (n.d.) *Code Institute*. Available at: https://codeinstitute.net/ (Accessed: 25 October 2026).
+
+GitHub (n.d.) *GitHub Docs*. Available at: https://docs.github.com/en (Accessed: 25 October 2026).
+
+Information Commissioner's Office (ICO) (n.d.) *A guide to the data protection principles*. Available at: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/data-protection-principles/a-guide-to-the-data-protection-principles/ (Accessed: 25 October 2026).
+
+Jupyter Project (n.d.) *Project Jupyter Documentation*. Available at: https://docs.jupyter.org/en/latest/ (Accessed: 25 October 2026).
+
+Legislation.gov.uk (2010) *Equality Act 2010*. Available at: https://www.legislation.gov.uk/ukpga/2010/15/contents (Accessed: 25 October 2026).
+
+Legislation.gov.uk (2018) *Data Protection Act 2018*. Available at: https://www.legislation.gov.uk/ukpga/2018/12/contents (Accessed: 25 October 2026).
+
+OpenAI (n.d.) *ChatGPT*. Available at: https://chatgpt.com/ (Accessed: 25 October 2026).
+
+pandas development team (n.d.) *pandas Documentation*. Available at: https://pandas.pydata.org/docs/ (Accessed: 25 October 2026).
+
+Python Software Foundation (n.d.) *Python*. Available at: https://www.python.org/ (Accessed: 25 October 2026).
+
+SciPy Community (n.d.) *scipy.stats.chi2_contingency*. Available at: https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2_contingency.html (Accessed: 25 October 2026).
+
+Subhash, P. (n.d.) *IBM HR Analytics Employee Attrition & Performance*. Kaggle. Available at: https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset (Accessed: 25 October 2026).
+
+Tableau (n.d.) *Create a Dashboard*. Available at: https://help.tableau.com/current/pro/desktop/en-gb/dashboards_create.htm (Accessed: 25 October 2026).
+
+## Acknowledgements
+
+I would like to acknowledge Code Institute for providing the learning materials and project framework that supported the development of this capstone project.
+
+This project provided an opportunity to apply Python, statistical analysis and data visualisation skills to a business-focused scenario.
+
