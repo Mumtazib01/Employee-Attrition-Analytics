@@ -738,9 +738,21 @@ These findings demonstrate how data analytics can support evidence-informed HR d
 
 ## Unfixed Bugs
 
-* Please list any unfixed bugs and explain why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+No known critical bugs remain in the project. The data preparation, exploratory analysis, statistical tests and Tableau dashboards have been tested against the business requirements.
+
+### Known Limitations
+
+- **Synthetic data:** Findings cannot be generalised to real organisations.
+- **Time limitations:** The dataset does not provide sufficient information to calculate annual attrition rates.
+- **Statistical limitations:** The Chi-square tests identify associations, not causation.
+- **Analysis scope:** The project focuses on descriptive analysis rather than predictive modelling.
+- **Dashboard scope:** Only selected workforce variables are visualised.
+
+### Future Improvements
+
+Future development could include additional workforce data, more advanced statistical analysis, improved dashboard functionality, SQL and machine learning.
+
+These are limitations of the project's scope rather than unresolved software bugs.
 
 ## Development Roadmap
 
